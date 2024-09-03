@@ -4,14 +4,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_marginTop="25sp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:layout_marginLeft="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloInvestimento" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:background="@null"
+        android:textSize="24sp"
+        android:textAlignment="center"
         android:id="@+id/investimento"
         android:hint="R$"
         android:inputType="numberDecimal" />
 
+    <TextView
+        android:layout_marginTop="25sp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:layout_marginLeft="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloData" />
+
     <EditText
+        android:textSize="17sp"
+        android:background="@null"
+        android:layout_marginLeft="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/data"
@@ -19,18 +45,37 @@
         android:focusable="false"
         android:clickable="true" />
 
+
+    <TextView
+        android:layout_marginTop="25sp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:layout_marginLeft="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloTaxaAual" />
+
     <EditText
+        android:textSize="17sp"
+        android:background="@null"
+        android:layout_marginLeft="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/porcentagem"
-        android:hint="Porcentagem"
         android:text="13"
         android:enabled="false" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/calculo"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
         android:hint="Calcular" />
 
 </LinearLayout>

@@ -57,7 +57,7 @@ public class ResultActivity extends Activity {
 
             resultadoInvestimento.setText(String.format("R$ %.2f", investimento));
             resultadoData.setText(String.format("%d dias", diasCorridos));
-            resultadoPorcentagem.setText(String.format("%.2f %", porcentagem));
+            resultadoPorcentagem.setText(String.format("%.2f%% de taxa anual", porcentagem));
             resultadoRendimentoBruto.setText(String.format("R$ %.2f", rendimento));
             resultadoImpostoDeRenda.setText(String.format("R$ %.2f", imposto));
             resutadoRendimentoLiquido.setText(String.format("R$ %.2f", valorLiquido));
