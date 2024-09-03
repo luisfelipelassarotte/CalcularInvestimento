@@ -39,7 +39,7 @@ public class FormActivity extends Activity {
                     FormActivity.this,
                     (view, year1, monthOfYear, dayOfMonth) -> {
                         // Format the date as yyyy-MM-dd
-                        String selectedDate = String.format(Locale.getDefault(), "%04d-%02d-%02d", year1, monthOfYear + 1, dayOfMonth);
+                        String selectedDate = String.format(Locale.getDefault(), "%02d-%02d-%04d", dayOfMonth, monthOfYear + 1, year1);
                         data.setText(selectedDate);
                     },
                     year, month, day);

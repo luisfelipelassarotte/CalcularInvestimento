@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/porcentagem"
         android:hint="Porcentagem"
-        android:text="10"
+        android:text="13"
         android:enabled="false" />
 
     <Button
